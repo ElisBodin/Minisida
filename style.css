@@ -1,0 +1,211 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body { 
+    margin: 0;
+    background-image: url(newspaper-wallpaper-1920x1080.jpg);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 380;
+   
+}
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
+    background: whitesmoke;
+}
+
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.logo{
+    height: 65px;
+    float:left;
+    margin-left:-30px;
+    margin-top: 3px;
+    padding: 10px 0;
+}
+
+
+nav{
+    float: right;
+}
+
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 30px;
+    margin-right: 120px;
+    
+    position: relative;
+}
+
+
+nav ul{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 5px;
+    order: 1;
+    margin-right: 270px;
+}
+
+
+nav a{
+    color: orangered;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+nav a:hover {
+    color: orange;
+
+}
+
+
+nav a::before {
+
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: orangered;
+    margin-top: 20px;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+} 
+
+
+nav a:hover::before{
+    width: 100%;   
+ 
+}
+
+
+.small-container{
+    font-family: 'Merriweather', serif;
+    
+    background-color: white;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px 5px 5px 5px;
+    align-items: center;
+    margin-top: 5px;
+    max-width: 700px;
+    
+    
+}
+
+
+h1{
+    font-size: 30px;
+    text-decoration: underline;
+
+}
+
+
+h2{
+    margin-left: 10px;
+    
+}
+
+
+h4{
+    margin-left: 10px;
+    
+}
+
+
+.extra-container{
+    text-decoration: none;
+    font-size: 25px;
+   
+
+}
+
+.article-pic{
+    border-radius: 10px;
+}
+   
+
+img { 
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.minimized{
+    display: none;
+}
+
+
+.linked-icons{
+    
+    width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20%;
+ 
+
+
+}
+
+
+@media all and (max-width: 500px) {  
+
+.small-container {  
+    flex-wrap: wrap;  
+    font-size: 20px; 
+    width: 80%;
+    word-wrap: break-word;
+    max-width: 90%;
+    
+}  
+
+
+nav a::before{
+
+    display: none;
+}
+
+
+
+nav ul{
+    display: none;
+
+}
+
+.minimized{
+    margin-top: 15px;
+    display: inline-block;
+  
+
+}
+
+
+
+}
